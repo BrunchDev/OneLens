@@ -1,0 +1,424 @@
+/* Spotlight (custom-style) */
+	.spotlight.custom-style {
+		padding: 7rem 7rem 5rem 7rem ;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		position: relative;
+		overflow-x: hidden;
+		text-align: left;
+	}
+
+    .spotlight.custom-style .content {
+        width: 44.5rem;
+        max-width: 100%;
+    }
+
+    .spotlight.custom-style .image {
+        -moz-flex-grow: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-grow: 0;
+        flex-grow: 0;
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        border-radius: 0;
+        /* border: solid 1px; */
+        width: 40rem;
+        height: 35rem;
+        /* margin-top: 2.5rem; */
+        /* margin-bottom: 5rem; */
+        margin-right: 3.5rem;
+
+        background-color: transparent;
+    }
+
+    .spotlight.custom-style.invert .image {
+        background-color: transparent;
+    }
+
+    .spotlight.custom-style .image img {
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -ms-object-fit: cover;
+        object-fit: cover;
+        -moz-object-position: center;
+        -webkit-object-position: center;
+        -ms-object-position: center;
+        object-position: center;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .spotlight.custom-style.orient-left {
+        -moz-flex-direction: row;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .spotlight.custom-style.content-align-center {
+        text-align: center;
+    }
+
+    .spotlight.custom-style.content-align-right {
+        text-align: right;
+    }
+
+    .spotlight.custom-style.content-align-left {
+        text-align: left;
+    }
+
+    .spotlight.custom-style.image-position-left .image img {
+        -moz-object-position: left;
+        -webkit-object-position: left;
+        -ms-object-position: left;
+        object-position: left;
+    }
+
+    .spotlight.custom-style.image-position-right .image img {
+        -moz-object-position: right;
+        -webkit-object-position: right;
+        -ms-object-position: right;
+        object-position: right;
+    }
+
+    @media screen and (max-width: 1680px) {
+        .spotlight.custom-style {
+            padding: 1rem 3rem 1rem 3rem ;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+
+        .spotlight.custom-style {
+            padding: 1rem 3rem 1rem 3rem ;
+        }
+
+        .spotlight.custom-style.orient-left .image {
+            margin-right: 0;
+            margin-left: 3.5rem;
+        }
+
+    }
+
+    @media screen and (max-width: 1100px) {
+
+        .spotlight.custom-style.orient-left .image {
+            margin-left: 0;
+        }
+
+        .spotlight.custom-style {
+            padding: 1rem 3rem 1rem 3rem ;
+        }
+
+        .spotlight.custom-style {
+            -moz-align-items: center;
+            -webkit-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            -moz-flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            text-align: center !important;
+        }
+
+        .spotlight.custom-style.orient-left {
+            -moz-flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+        }
+
+        .spotlight.custom-style .image {
+            width: 36rem;
+            height: 32rem;
+            /* margin-top: 2.1875rem; */
+            /* margin-bottom: 4.625rem; */
+        }
+
+        .spotlight.custom-style .image {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+
+        .spotlight.custom-style {
+            padding: 2.5rem 2rem 0.5rem 2rem ;
+            -moz-align-items: -moz-flex-start;
+            -webkit-align-items: -webkit-flex-start;
+            -ms-align-items: -ms-flex-start;
+            align-items: flex-start;
+        }
+
+            .spotlight.custom-style .image {
+                width: 24rem;
+                height: 22rem;
+                /* margin-top: 1.5625rem; */
+                /* margin-bottom: 3.875rem; */
+            }
+
+        .spotlight.custom-style {
+            -moz-align-items: center;
+            -webkit-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            -moz-flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            text-align: center !important;
+        }
+
+        .spotlight.custom-style.orient-left {
+            -moz-flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+        }
+
+        .spotlight.custom-style .content {
+            width: 34rem;
+            max-width: 100%;
+        }
+
+        .spotlight.custom-style .image {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+    }
+
+
+    @media screen and (max-width: 736px) {
+
+        .spotlight.custom-style.orient-left {
+            -moz-flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+        }
+
+            .spotlight.custom-style.orient-left .image {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+    }
+
+
+
+
+/* Spotlight (custom-style-small) */
+
+	.spotlight.custom-style-small {
+		padding: 7rem 7rem 5rem 7rem ;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		position: relative;
+		overflow-x: hidden;
+		text-align: left;
+	}
+
+    .spotlight.custom-style-small .content {
+        width: 44.5rem;
+        max-width: 100%;
+    }
+
+    .spotlight.custom-style-small .image {
+        -moz-flex-grow: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-grow: 0;
+        flex-grow: 0;
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        border-radius: 0;
+        /* border: solid 1px; */
+        width: 15rem;
+        height: 15rem;
+        /* margin-top: 2.5rem; */
+        /* margin-bottom: 5rem; */
+        margin-right: 3.5rem;
+
+        background-color: transparent;
+    }
+
+    .spotlight.custom-style-small.invert .image {
+        background-color: transparent;
+    }
+
+    .spotlight.custom-style-small .image img {
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -ms-object-fit: cover;
+        object-fit: cover;
+        -moz-object-position: center;
+        -webkit-object-position: center;
+        -ms-object-position: center;
+        object-position: center;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    @media screen and (max-width: 1680px) {
+
+        .spotlight.custom-style-small {
+            padding: 5rem 5rem 3rem 5rem ;
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+
+        .spotlight.custom-style-small {
+            padding: 4rem 4rem 2rem 4rem ;
+        }
+
+    }
+
+    @media screen and (max-width: 980px) {
+
+        .spotlight.custom-style-small {
+            padding: 3.75rem 3rem 1.75rem 3rem ;
+        }
+
+            .spotlight.custom-style-small .image {
+                width: 15rem;
+                height: 15rem;
+                /* margin-top: 2.1875rem; */
+                /* margin-bottom: 4.625rem; */
+            }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        .spotlight.custom-style-small {
+            padding: 2.5rem 2rem 0.5rem 2rem ;
+            -moz-align-items: -moz-flex-start;
+            -webkit-align-items: -webkit-flex-start;
+            -ms-align-items: -ms-flex-start;
+            align-items: flex-start;
+        }
+
+            .spotlight.custom-style-small .image {
+                width: 15rem;
+                height: 15rem;
+                /* margin-top: 1.5625rem; */
+                /* margin-bottom: 3.875rem; */
+            }
+    }
+
+    @media screen and (max-width: 736px) {
+
+        .spotlight.custom-style-small {
+            -moz-align-items: center;
+            -webkit-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            -moz-flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            text-align: center !important;
+        }
+
+            .spotlight.custom-style-small .content {
+                width: 34rem;
+                max-width: 100%;
+            }
+
+            .spotlight.custom-style-small .image {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+    }
+
+    .spotlight.custom-style-small.orient-left {
+        -moz-flex-direction: row;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+        .spotlight.custom-style-small.orient-left .image {
+            margin-right: 0;
+            margin-left: 3.5rem;
+        }
+
+        @media screen and (max-width: 736px) {
+
+            .spotlight.custom-style-small.orient-left {
+                -moz-flex-direction: column-reverse;
+                -webkit-flex-direction: column-reverse;
+                -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+            }
+
+                .spotlight.custom-style-small.orient-left .image {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+
+        }
+
+    .spotlight.custom-style-small.content-align-center {
+        text-align: center;
+    }
+
+    .spotlight.custom-style-small.content-align-right {
+        text-align: right;
+    }
+
+    .spotlight.custom-style-small.image-position-left .image img {
+        -moz-object-position: left;
+        -webkit-object-position: left;
+        -ms-object-position: left;
+        object-position: left;
+    }
+
+    .spotlight.custom-style-small.image-position-right .image img {
+        -moz-object-position: right;
+        -webkit-object-position: right;
+        -ms-object-position: right;
+        object-position: right;
+    }
+
