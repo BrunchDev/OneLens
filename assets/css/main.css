@@ -8527,31 +8527,31 @@ input, select, textarea {
 			}
 
 		#wrapper > .color1 {
-			background-color: #30363d;
+			background-color: #FFFFFF;
 		}
 
 		#wrapper > .color2 {
-			background-color: #db8992;
+			background-color: #CED3D8;
 		}
 
 		#wrapper > .color3 {
-			background-color: #ab7aad;
+			background-color: #E6F4FF;
 		}
 
 		#wrapper > .color4 {
-			background-color: #897cad;
+			background-color: #8C97A0;
 		}
 
 		#wrapper > .color5 {
-			background-color: #7794ce;
+			background-color: #83A4BF;
 		}
 
 		#wrapper > .color6 {
-			background-color: #64abb4;
+			background-color: #5F666D;
 		}
 
 		#wrapper > .color7 {
-			background-color: #6ba78c;
+			background-color: #0B4F8F;
 		}
 
 		#wrapper.divided > * {
