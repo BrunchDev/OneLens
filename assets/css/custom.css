@@ -84,6 +84,7 @@
     text-decoration: none;
 }
 
+
 .slogan {
     float: right;
     margin: 1.1em 2em 1em 1em;
@@ -98,6 +99,31 @@
   .slogan {
     display: none;
   }
+}
+
+/* Feature list (match Rectangle layout) */
+.charm {
+  max-width: 80px;
+  padding-right: 10px;
+}
+
+.spotlight .content .row > * {
+  padding: 0;
+  text-align: left;
+}
+
+.spotlight .content .row .charm {
+  width: 64px;
+  height: 64px;
+  object-fit: contain; /* keep SVG proportions inside square area */
+}
+
+.spotlight .content .row .col-9 {
+  padding-left: 1rem;
+}
+
+.feature-list {
+  padding-left: 2rem;
 }
 
 #wrapper > .color11 {
