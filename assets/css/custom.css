@@ -113,8 +113,8 @@
 }
 
 .spotlight .content .row .charm {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   object-fit: contain; /* keep SVG proportions inside square area */
 }
 
@@ -124,6 +124,10 @@
 
 .feature-list {
   padding-left: 2rem;
+}
+
+.feature-list .row {
+  align-items: center;
 }
 
 #wrapper > .color11 {
