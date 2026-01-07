@@ -92,7 +92,7 @@
                         <img class="charm col-3" src="assets/images/sf-symbols/camera.aperture.svg" alt="All lenses">
                         <div class="col-9">
                             <div><strong>All lenses</strong></div>
-                            <div>Access all camera lenses including x2 and x8 fusion camera lens.</div>
+                            <div>Access all camera lenses including fusion camera lens.</div>
                         </div>
                     </div>
                     <br>
@@ -140,7 +140,7 @@
                         <img class="charm col-3" src="assets/images/sf-symbols/lock.iphone.svg" alt="Lock Screen">
                         <div class="col-9">
                             <div><strong>Lock Screen launch</strong></div>
-                            <div>Launch OneLens directly from your Lock Screen camera button.</div>
+                            <div>Launch OneLens directly from your <a href="support.html#lock-screen"> Lock Screen</a> camera button.</div>
                         </div>
                     </div>
                     <br>
@@ -223,7 +223,7 @@
         <footer class="wrapper style1 align-center">
             <div class="inner">
                 <p>© BrunchDevelopment <span id="year"></span></p>
-                <p><a href="support.html">Support</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a> | <a href="contact-us.html">Contact Us</a></p>
+                <p><a href="support.html">Support</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a> | <a href="support.html#contact-us"> Contact Us</a>
             </div>
         </footer>
     </div>
@@ -232,6 +232,19 @@
         var el = document.getElementById('year');
         if (el) {
             el.textContent = ' ' + new Date().getFullYear();
+        }
+        
+        // Email obfuscation - decode base64 and create mailto link
+        var contactLink = document.getElementById('contact-link');
+        if (contactLink) {
+            var encodedEmail = contactLink.getAttribute('data-email');
+            try {
+                var decodedEmail = atob(encodedEmail);
+                contactLink.href = 'mailto:' + decodedEmail;
+            } catch(e) {
+                // Fallback if decoding fails
+                contactLink.href = '#';
+            }
         }
     })();
 </script>

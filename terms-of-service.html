@@ -84,7 +84,7 @@
                         </p>
                         <h3>10. Support and Contact Information</h3>
                         <p>
-                            For any support-related inquiries, please contact us at support@brunchdev.tech. For privacy-related questions, refer to our <a href="privacy-policy.html"> Privacy Policy</a>.
+                            For any support-related inquiries, please contact us at "<span id="contact-email"></span>". For privacy-related questions, refer to our <a href="privacy-policy.html"> Privacy Policy</a>.
                         </p>
                     </div>
                 </section>
@@ -96,13 +96,30 @@
     <!-- Footer -->
     <footer class="wrapper style1 align-center">
         <div class="inner">
-            <ul class="icons">
-                <li><a href="mailto:support@brunchdev.tech" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-            </ul>
-            <p>© <a href="https://brunchdev.tech">BrunchDevelopment</a></p>
+            <p>© <a href="index.html">BrunchDevelopment</a> <span id="year"></span></p>
         </div>
     </footer>
 </div>
-
+<script>
+    (function() {
+        var el = document.getElementById('year');
+        if (el) {
+            el.textContent = ' ' + new Date().getFullYear();
+        }
+        
+        // Email obfuscation - decode base64 and display as text
+        var contactEmail = document.getElementById('contact-email');
+        if (contactEmail) {
+            var encodedEmail = 'c3VwcG9ydEBicnVuY2hkZXYudGVjaA==';
+            try {
+                var decodedEmail = atob(encodedEmail);
+                contactEmail.textContent = decodedEmail;
+            } catch(e) {
+                // Fallback if decoding fails
+                contactEmail.textContent = '[email protected]';
+            }
+        }
+    })();
+</script>
 </body>
 </html>
