@@ -81,27 +81,39 @@
 
                         <h3>3. Google User Data Access</h3>
                         <p>
-                            If you choose to connect OneLens to Google services (such as Google Drive),
+                            If you choose to connect OneLens to Google services (such as Google Drive or Google Photos),
                             access is granted only after explicit consent via the Google OAuth consent screen.
                         </p>
-                        <p>The application may access the following Google user data:</p>
+                        <p>
+                            Depending on the enabled feature, OneLens may access the following Google user data:
+                        </p>
                         <ul>
                             <li>Basic Google account information (email address and account identifier)</li>
-                            <li>Google Drive file metadata (file names, IDs, MIME types, sizes)</li>
-                            <li>Google Drive file content for files explicitly selected or created by the user</li>
+                            <li>Google Drive file metadata and file content for files explicitly selected or created by the user</li>
+                            <li>Google Photos media items and associated metadata created or selected through the app</li>
                         </ul>
                         <p>
                             OneLens does not access Gmail, contacts, calendars, or any Google data outside the scopes
                             explicitly shown and approved during OAuth authorization.
                         </p>
 
+
                         <h3>4. Google User Data Usage</h3>
                         <p>
-                            Google user data is used strictly to provide the requested functionality,
-                            such as uploading files to your own Google Drive, displaying upload status,
-                            and supporting resumable uploads. Google user data is never used for advertising,
-                            tracking, analytics, or automated profiling.
+                            Google user data is accessed solely to perform user-requested actions within OneLens,
+                            such as uploading photos or videos to Google Drive or Google Photos, displaying upload
+                            status, and supporting resumable uploads where applicable.
                         </p>
+                        <p>
+                            All Google user data is processed locally on the user’s device and transmitted directly
+                            to Google services. OneLens does not operate backend servers and does not store Google
+                            user data persistently.
+                        </p>
+                        <p>
+                            Google user data is never used for advertising, analytics, tracking, profiling, or
+                            any purpose unrelated to the explicit functionality requested by the user.
+                        </p>
+
 
                         <h3>5. Data Security & Protection</h3>
                         <p>
@@ -110,7 +122,7 @@
                             including Google APIs, are encrypted using HTTPS with TLS.
                         </p>
                         <p>
-                            Any temporary server-side data used solely to facilitate upload continuity is retained
+                            Any temporary client-side data used solely to facilitate upload continuity is retained
                             only for the minimum duration required and is access-restricted.
                         </p>
 
@@ -123,18 +135,20 @@
 
                         <h3>7. Data Retention & Deletion</h3>
                         <p>
-                            User data is retained only as long as necessary to provide the requested functionality.
-                            Temporary upload data is deleted automatically after completion.
+                            OneLens does not store Google user data or personal data on any servers operated by us.
+                            All Google user data is processed locally on the user’s device and transmitted directly
+                            to Google Drive or Google Photos to perform explicit user-requested actions.
                         </p>
                         <p>
-                            Users may request deletion of any application-associated data by contacting us at
-                            <span id="contact-email"></span>. Upon request, we will delete remaining data
-                            and revoke stored OAuth tokens where applicable.
+                            Because no Google user data is retained by OneLens beyond transient, in-memory processing,
+                            there is no persistent application-side data to delete.
                         </p>
                         <p>
-                            Users may also revoke Google access at any time through their Google Account
-                            security settings, which immediately prevents further data access.
+                            Users may revoke the application’s access to Google data at any time through their
+                            Google Account security settings, which immediately prevents any further access.
                         </p>
+
+
 
                         <h3>8. Changes to This Privacy Policy</h3>
                         <p>
