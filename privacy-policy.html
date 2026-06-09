@@ -62,145 +62,130 @@
                     <div class="content">
 
                         <p>
-                            <strong>Effective Date:</strong> 20 January 2026
+                            <strong>Effective Date:</strong> 9 June 2026
                         </p>
 
                         <h3>1. Introduction</h3>
 
                         <p>
-                            OneLens is an iOS camera application developed by BrunchDevelopment.
-                            This Privacy Policy explains how OneLens handles your data when you use
-                            the app and connect it to a cloud storage provider.
+                            OneLens is an iOS camera app developed by Brunch Development that uploads 
+                            photos and videos directly to the cloud storage provider you choose. 
+                            Brunch Development does not operate its own servers for storing your media. 
+                            Your content goes only to the provider you authorize - never through us.
                         </p>
 
-                        <p>
-                            OneLens is designed to upload your photos and videos directly from your
-                            device to the cloud provider(s) you choose. OneLens does not run its own
-                            servers for storing your media. Your content is sent only to the cloud
-                            provider(s) you explicitly authorize, and only minimal information is
-                            stored locally on your device as described in this policy.
-                        </p>
-
-                        <h3>2. Connected Cloud Providers</h3>
+                        <h3>2. Cloud providers you can connect</h3>
 
                         <p>
-                            OneLens allows you to connect one or more cloud storage providers, such as:
+                            OneLens allows you to connect one or more of these cloud storage providers:
                         </p>
 
                         <ul>
+                            <li>Microsoft OneDrive</li>
                             <li>Google Drive</li>
                             <li>Google Photos</li>
-                            <!-- <li>Dropbox</li> -->
-                            <li>Microsoft OneDrive</li>
+                            <li>Dropbox</li>
                         </ul>
 
                         <p>
-                            The rules described in this Privacy Policy apply regardless of which
-                            provider you connect. Access is granted only after explicit consent via
-                            the OAuth consent screen. You can disconnect any provider at any time.
-                            When disconnected, OneLens removes locally stored thumbnails, cached data,
-                            pending uploads, and stored authentication tokens related to that provider.
-                            Media already uploaded to the cloud provider remains stored with that
-                            provider and is governed by its privacy policy.
+                            Connecting a provider requires your explicit consent via that provider's OAuth screen. 
+                            You can disconnect any provider at any time from within the app, which removes all locally stored tokens and cached data including pending uploads for that provider.
+                            Once media is uploaded, it is governed by the privacy policy of the provider you chose.
                         </p>
 
-                        <h3>3. Data We Access</h3>
-
-                        <p>
-                            OneLens accesses only the data needed to perform actions you request,
-                            such as uploading or viewing your photos and videos. The app can only access
-                            content created by OneLens.
-                        </p>
-
-                        <p>
-                            <strong>For connected cloud providers, OneLens may access:</strong>
-                        </p>
-
+                        <h3>3. What OneLens reads from your device</h3>
                         <ul>
-                            <li>An account identifier needed to sign you in and keep your session active</li>
-                            <li>Photos and videos created using OneLens</li>
-                            <li>Basic file information (such as filename, size, and upload time)</li>
-                            <li>Media details stored in the file itself (such as EXIF data or GPS location, if enabled by you)</li>
-                            <li>Technical upload status information needed to complete uploads</li>
-                            <li>General storage usage information (for example, used versus available space)</li>
+                            <li><strong>Camera:</strong> OneLens accesses your camera to capture photos and videos. It does not access your photo library.</li>
+                            <li><strong>Microphone:</strong> OneLens accesses your microphone when recording videos.</li>
+                            <li><strong>Loaction:</strong> Optionally OneLens acceses your location to tag photos and videoes. </li>
+                            <li><strong>Pending uploads:</strong> Media waiting to upload is stored temporarily on your device and deleted automatically once the upload completes.</li>
+                            <li><strong>Thumbnails:</strong> Small preview images may be cached locally to improve performance. This can be disabled in app settings at any time.</li>
+                            <li><strong>Authentication tokens:</strong> OAuth access tokens are stored securely in the iOS Keychain and are never transmitted to Brunch Development.</li>
                         </ul>
 
-                        <p>
-                            OneLens cannot browse, view, or access files that were not created by the app
-                            and cannot see files you upload to the cloud outside of OneLens.
-                        </p>
+
+                        <h3>4. What OneLens reads from your cloud storage</h3>
 
                         <p>
-                            <strong>OneLens does <strong>not</strong> access:</strong>
+                            OneLens accesses only what is needed to perform the actions you request. OAuth authorization may permit broader access than what the app actively uses - the table below shows what is actually read.
+
                         </p>
 
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Provider</th>
+                                <th>Folders visible to OneLens</th>
+                                <th>Content visible within those folders</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><strong>OneDrive</strong></td>
+                                <td>All folders in root, but not subfolders</td>
+                                <td>All photos and videos in the OneLens save destination </td>
+                              </tr>
+                              <tr>
+                                <td><strong>Dropbox</strong></td>
+                                <td>Only /Apps/OneLens and any subfolders</td>
+                                <td>All photos and videos in the OneLens save destinatio</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Google Drive</strong></td>
+                                <td>Only the OneLens save destination in root</td>
+                                <td>Only OneLens-created content</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Google Photos</strong></td>
+                                <td>Only the OneLens album</td>
+                                <td>Only OneLens-created content</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        <p>
+                            OneLens does not read, index, or transmit your email address, display name, profile photo, contacts, calendar, or messages from any connected provider.
+                        </p>
+
+                        <h3>5. What Brunch Development receives</h3>
+
+                        <p>
+                            <strong>Crashlytics</strong> (always active) Crash reports containing device model, OS version, app version, and error diagnostics. Used solely to identify and fix software issues.
+                        </p>
+                        <p>
+                            <strong>Firebase Analytics</strong> (disabled by default — opt-in) Anonymized usage data including app interactions, feature usage, device information, and approximate location derived from IP address. Used solely to understand how the app is used and to improve it. You can enable or disable this at any time in app settings.
+                        </p>
+                        <p>
+                            Both services are operated by Google. Information they collect is processed in accordance with Google's Privacy Policy.
+                        </p>
+
+                        <h3>6. Your controlls</h3>
+
+                        
                         <ul>
-                            <li>Your email address</li>
-                            <li>Your name or profile photo</li>
-                            <li>Your contacts, calendars, or messages</li>
-                            <li>Any files not created by OneLens</li>
+                          <li>
+                            <strong>Disconnect a cloud provider</strong> — removes all local tokens, cached thumbnails, and pending uploads for that provider
+                          </li>
+                          <li>
+                            <strong>Pending uploads</strong> — photos and videos waiting to upload are stored temporarily on your device and deleted automatically once the upload completes
+                          </li>
+                          <li>
+                            <strong>Thumbnails</strong> — small preview images cached locally to improve performance; can be disabled in app settings at any time
+                          </li>
+                          <li>
+                            <strong>Sign-in information</strong> — OAuth access tokens are stored securely in the iOS Keychain; removed when you disconnect the provider or delete the app
+                          </li>
+                          <li>
+                            <strong>Analytics</strong> — disabled by default; can be enabled or disabled in app settings at any time
+                          </li>
+                          <li>
+                            <strong>Delete all local OneLens data</strong> — delete the app
+                          </li>
+                          <li>
+                            <strong>Remove uploaded media</strong> — manage directly in your cloud provider
+                          </li>
                         </ul>
+                        
 
-                        <h3>4. How We Use Data</h3>
-
-                        <p>
-                            User data is accessed solely to perform user-requested actions, such as
-                            uploading photos or videos to the connected cloud provider, displaying
-                            upload status, supporting resumable uploads where applicable, and displaying
-                            or deleting user-created content.
-                        </p>
-
-                        <p>
-                            OneLens does <strong>not</strong> use your data for advertising,
-                            analytics, tracking, profiling, or any purpose unrelated to the explicit
-                            functionality requested by the user.
-                        </p>
-
-                        <p>
-                            OneLens may offer optional, anonymized crash and bug reporting to improve
-                            app stability. These reports do not include your photos, videos, cloud
-                            account data, or personal information.
-                        </p>
-
-                        <h3>5. Local Processing and Storage</h3>
-
-                        <ul>
-                            <li>
-                                <strong>Pending uploads:</strong>
-                                Photos and videos waiting to be uploaded are stored temporarily on
-                                your device and are automatically deleted once the upload finishes.
-                            </li>
-
-                            <li>
-                                <strong>Thumbnails:</strong>
-                                Small preview images may be stored on your device to make the app
-                                faster. You can turn this feature off at any time in the app settings.
-                            </li>
-
-                            <li>
-                                <strong>Sign-in information:</strong>
-                                Cloud access tokens are stored securely using Apple’s iOS Keychain.
-                            </li>
-                        </ul>
-
-                        <h3>6. Data Sharing</h3>
-
-                        <p>
-                            OneLens shares your data only with the cloud provider(s) you choose.
-                        </p>
-
-                        <ul>
-                            <li>Your data is never routed through OneLens servers</li>
-                            <li>Your data is never sold or shared with unrelated third parties</li>
-                            <li>Each cloud provider works independently under your authorization</li>
-                            <li>Once uploaded, data is governed by that provider’s privacy policy.</li>
-                        </ul>
-
-                        <p>
-                            OneLens uses Supabase only for optional, anonymized crash and bug reports.
-                            This feature is turned off by default. No cloud provider data, media files,
-                            or sign-in credentials are sent to Supabase.
-                        </p>
 
                         <h3>7. Data Security</h3>
 
@@ -211,40 +196,20 @@
                             secure key storage.
                         </p>
 
-                        <h3>8. Data Retention and Deletion</h3>
 
-                        <p>
-                            OneLens does not store your cloud data on its own servers. You control
-                            all stored data.
-                        </p>
-
-                        <p>
-                            You can remove your data at any time by:
-                        </p>
-
-                        <ul>
-                            <li>Deleting the OneLens app</li>
-                            <li>Signing out of or disconnecting a cloud provider</li>
-                            <li>Removing the OneLens folder from “On My iPhone”</li>
-                            <li>Turning off thumbnail storage in the app settings</li>
-                        </ul>
-
-                        <h3>9. Changes to This Privacy Policy</h3>
+                        <h3>8. Changes to This Privacy Policy</h3>
 
                         <p>
                             If we make important changes to this Privacy Policy, we will inform you
                             inside the app. Continued use of OneLens means you accept the updated policy.
                         </p>
 
-                        <h3>10. Contact</h3>
+                        <h3>9. Contact and governing law </h3>
 
                         <p>
                             If you have questions about this Privacy Policy or how OneLens handles data,
                             contact us at <strong><span id="contact-email"></span></strong>.
                         </p>
-
-                        <h3>11. Governing Law</h3>
-
                         <p>
                             This Privacy Policy is governed by European Union law, including the
                             General Data Protection Regulation (GDPR).
@@ -261,7 +226,7 @@
     <footer class="wrapper style1 align-center">
         <div class="inner">
             <p>
-                © <a href="index.html">BrunchDevelopment</a>
+                © <a href="index.html">Brunch Development</a>
                 <span id="year"></span>
             </p>
         </div>
